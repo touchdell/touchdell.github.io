@@ -78,9 +78,8 @@
           });
       
           let result = await response.json();
-          if(response.status!=200){
-            document.getElementById("demo").innerHTML = "wait.>>>";
-          }
+          document.getElementById("demo").innerHTML = response.statusText;
+  
       
           //alert(result.message);
           alert(result.name);
