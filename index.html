@@ -58,6 +58,8 @@
           <!--</div>-->
 
           <!-- Buttons -->
+          <a id ="demo2" href="#" aria-busy="false"></a>
+
           <input type="reset" value="Reset" onclick="event.preventDefault()">
           <input type="submit">
           
@@ -71,6 +73,7 @@
     <script>
         formElem.onsubmit = async (e) => {
           e.preventDefault();
+          document.getElementById("demo2").ariaBusy = "true";
       
           let response = await fetch('https://prod-30.southeastasia.logic.azure.com:443/workflows/23543fda5fa441fdaa3dd982b2427086/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=DpasYfgNWSxNq_2J95wA8rAtNg58aYRtUbN_lVTmHP8', {
             method: 'POST',
@@ -78,11 +81,9 @@
           });
       
           let result = await response.json();
-          document.getElementById("demo").innerHTML = "hello";
-  
-      
-          //alert(result.message);
-          alert(result.name);
+         //alert(result.message);
+         // alert(result.name);
+         document.getElementById("demo2").ariaBusy = "false";
         };
       </script>
 
