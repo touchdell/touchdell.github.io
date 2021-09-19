@@ -60,6 +60,7 @@
           <!-- Buttons -->
           <input type="reset" value="Reset" onclick="event.preventDefault()">
           <input type="submit">
+          <p id="demo"></p>
 
         </form>
       </section><!-- ./ Form elements-->
@@ -76,6 +77,9 @@
           });
       
           let result = await response.json();
+          if(response.status!=200){
+            document.getElementById("demo").innerHTML = "wait>>>";
+          }
       
           //alert(result.message);
           alert(result.name);
