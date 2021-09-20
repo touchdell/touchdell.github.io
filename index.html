@@ -61,11 +61,11 @@
           <a id ="demo2" href="#" aria-busy="false"></a>
 
           <input type="reset" value="Reset" onclick="event.preventDefault()">
-          <input type="submit">
+          <input id = "sub1" type="submit" aria-busy="false">
           
 
         </form>
-        <p id="demo">test</p>
+        <p id="d1"></p>
       </section><!-- ./ Form elements-->
 
 
@@ -74,6 +74,7 @@
         formElem.onsubmit = async (e) => {
           e.preventDefault();
           document.getElementById("demo2").ariaBusy = "true";
+          
       
           let response = await fetch('https://prod-30.southeastasia.logic.azure.com:443/workflows/23543fda5fa441fdaa3dd982b2427086/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=DpasYfgNWSxNq_2J95wA8rAtNg58aYRtUbN_lVTmHP8', {
             method: 'POST',
@@ -84,6 +85,8 @@
          //alert(result.message);
          // alert(result.name);
          document.getElementById("demo2").ariaBusy = "false";
+         document.getElementById("d1").innerHTML = "ชื่อไฟล์ที่จัดส่ง: = "+result.fileup;
+        
         };
       </script>
 
