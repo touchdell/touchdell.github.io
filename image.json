@@ -1,0 +1,33 @@
+{
+  "$content-type": "multipart/form-data; boundary=--------------------------017961099995501725713057",
+  "$content": "LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLTAxNzk2MTA5OTk5NTUwMTcyNTcxMzA1Nw0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJmaXJzdE5hbWUiDQoNCnJvZ2VyDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tMDE3OTYxMDk5OTk1NTAxNzI1NzEzMDU3DQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9ImZpbGUiOyBmaWxlbmFtZT0iIg0KDQoNCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0wMTc5NjEwOTk5OTU1MDE3MjU3MTMwNTcNCkNvbnRlbnQtRGlzcG9zaXRpb246IGZvcm0tZGF0YTsgbmFtZT0iZmlsZTIiOyBmaWxlbmFtZT0iIg0KDQoNCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0wMTc5NjEwOTk5OTU1MDE3MjU3MTMwNTctLQ0K",
+  "$multipart": [
+    {
+      "headers": {
+        "Content-Disposition": "form-data; name=\"firstName\""
+      },
+      "body": {
+        "$content-type": "application/octet-stream",
+        "$content": "cm9nZXI="
+      }
+    },
+    {
+      "headers": {
+        "Content-Disposition": "form-data; name=\"file\"; filename=\"\""
+      },
+      "body": {
+        "$content-type": "application/octet-stream",
+        "$content": ""
+      }
+    },
+    {
+      "headers": {
+        "Content-Disposition": "form-data; name=\"file2\"; filename=\"\""
+      },
+      "body": {
+        "$content-type": "application/octet-stream",
+        "$content": ""
+      }
+    }
+  ]
+}

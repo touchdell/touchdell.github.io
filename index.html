@@ -38,8 +38,12 @@
           </select> -->
 
           <!-- File browser -->
-          <label for="file">แนบรูปภาพ
+          <label for="file">แนบรูปภาพ1
             <input type="file" id="file" name="picture" accept="image/*">
+          </label>
+
+          <label for="file">แนบรูปภาพ2
+            <input type="file" id="file1" name="picture" accept="image/*">
           </label>
 
 
@@ -66,6 +70,7 @@
 
         </form>
         <p id="d1"></p>
+        <p id="d2"></p>
       </section><!-- ./ Form elements-->
 
 
@@ -85,7 +90,8 @@
          //alert(result.message);
          // alert(result.name);
          document.getElementById("demo2").ariaBusy = "false";
-         document.getElementById("d1").innerHTML = "ชื่อไฟล์ที่จัดส่ง: = "+result.fileup;
+         document.getElementById("d1").innerHTML = "ชื่อไฟล์ที่จัดส่ง: = "+result.file;
+         document.getElementById("d2").innerHTML = "ชื่อไฟล์ที่จัดส่ง: = "+result.file1;
         
         };
       </script>
