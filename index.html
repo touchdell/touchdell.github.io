@@ -38,9 +38,11 @@
           </select> -->
 
           <!-- File browser -->
+
           <label for="file">แนบรูปภาพ1
-            <input type="file" id="file" name="picture" accept="image/*">
+            <input type="file" id="file" name="picture" accept="image/*" multiple>
           </label>
+          
           <div>
             <a id ="dem1" href="#" aria-busy="false"></a>
             <p id="d1"></p>
@@ -126,30 +128,15 @@
             <p id="d11"></p>
            </div>
 
-          <label for="file">แนบรูปภาพ12
-            <input type="file" id="file11" name="picture" accept="image/*">
+           <label for="file">แนบรูปภาพ12
+            <input type="file" id="file11" name="picture" accept="image/*" multiple>
           </label>
           <div>
             <a id ="dem12" href="#" aria-busy="false"></a>
             <p id="d12"></p>
            </div>
 
-
-          <!--<div class="grid">-->
-
-            <!-- Date
-            <label for="date">Date
-              <input type="date" id="date" name="date">
-            </label>
-
-            Time
-            <label for="time">Time
-              <input type="time" id="time" name="time">
-            </label>-->
-
-          <!--</div>-->
-
-          <!-- Buttons -->
+          
 
           <input type="reset" value="Reset" onclick="event.preventDefault()">
           <input id = "sub1" type="submit" aria-busy="false">
@@ -215,7 +202,6 @@
         
         };
       </script>
-
   </body>
 
 </html>
