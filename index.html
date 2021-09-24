@@ -41,10 +41,98 @@
           <label for="file">แนบรูปภาพ1
             <input type="file" id="file" name="picture" accept="image/*">
           </label>
+          <div>
+            <a id ="dem1" href="#" aria-busy="false"></a>
+            <p id="d1"></p>
+           </div>
 
           <label for="file">แนบรูปภาพ2
             <input type="file" id="file1" name="picture" accept="image/*">
           </label>
+          <div>
+            <a id ="dem2" href="#" aria-busy="false"></a>
+            <p id="d2"></p>
+           </div>
+
+          <label for="file">แนบรูปภาพ3
+            <input type="file" id="file2" name="picture" accept="image/*">
+          </label>
+          <div>
+            <a id ="dem3" href="#" aria-busy="false"></a>
+            <p id="d3"></p>
+           </div>
+
+          <label for="file">แนบรูปภาพ4
+            <input type="file" id="file3" name="picture" accept="image/*">
+          </label>
+          <div>
+            <a id ="dem4" href="#" aria-busy="false"></a>
+            <p id="d4"></p>
+           </div>
+
+          <label for="file">แนบรูปภาพ5
+            <input type="file" id="file4" name="picture" accept="image/*">
+          </label>
+          <div>
+            <a id ="dem5" href="#" aria-busy="false"></a>
+            <p id="d5"></p>
+           </div>
+
+          <label for="file">แนบรูปภาพ6
+            <input type="file" id="file5" name="picture" accept="image/*">
+          </label>
+          <div>
+            <a id ="dem6" href="#" aria-busy="false"></a>
+            <p id="d6"></p>
+           </div>
+
+          <label for="file">แนบรูปภาพ7
+            <input type="file" id="file6" name="picture" accept="image/*">
+          </label>
+          <div>
+            <a id ="dem7" href="#" aria-busy="false"></a>
+            <p id="d7"></p>
+           </div>
+
+          <label for="file">แนบรูปภาพ8
+            <input type="file" id="file7" name="picture" accept="image/*">
+          </label>
+          <div>
+            <a id ="dem8" href="#" aria-busy="false"></a>
+            <p id="d8"></p>
+           </div>
+
+          <label for="file">แนบรูปภาพ9
+            <input type="file" id="file8" name="picture" accept="image/*">
+          </label>
+          <div>
+            <a id ="dem9" href="#" aria-busy="false"></a>
+            <p id="d9"></p>
+           </div>
+
+          <label for="file">แนบรูปภาพ10
+            <input type="file" id="file9" name="picture" accept="image/*">
+          </label>
+          <div>
+            <a id ="dem10" href="#" aria-busy="false"></a>
+            <p id="d10"></p>
+           </div>
+
+          <label for="file">แนบรูปภาพ11
+            <input type="file" id="file10" name="picture" accept="image/*">
+          </label>
+          <div>
+            <a id ="dem11" href="#" aria-busy="false"></a>
+            <p id="d11"></p>
+           </div>
+
+          <label for="file">แนบรูปภาพ12
+            <input type="file" id="file11" name="picture" accept="image/*">
+          </label>
+          <div>
+            <a id ="dem12" href="#" aria-busy="false"></a>
+            <p id="d12"></p>
+           </div>
 
 
           <!--<div class="grid">-->
@@ -62,15 +150,13 @@
           <!--</div>-->
 
           <!-- Buttons -->
-          <a id ="demo2" href="#" aria-busy="false"></a>
 
           <input type="reset" value="Reset" onclick="event.preventDefault()">
           <input id = "sub1" type="submit" aria-busy="false">
           
 
         </form>
-        <p id="d1"></p>
-        <p id="d2"></p>
+        
       </section><!-- ./ Form elements-->
 
 
@@ -78,7 +164,18 @@
     <script>
         formElem.onsubmit = async (e) => {
           e.preventDefault();
-          document.getElementById("demo2").ariaBusy = "true";
+          document.getElementById("dem1").ariaBusy = "true";
+          document.getElementById("dem2").ariaBusy = "true";
+          document.getElementById("dem3").ariaBusy = "true";
+          document.getElementById("dem4").ariaBusy = "true";
+          document.getElementById("dem5").ariaBusy = "true";
+          document.getElementById("dem6").ariaBusy = "true";
+          document.getElementById("dem7").ariaBusy = "true";
+          document.getElementById("dem8").ariaBusy = "true";
+          document.getElementById("dem9").ariaBusy = "true";
+          document.getElementById("dem10").ariaBusy = "true";
+          document.getElementById("dem11").ariaBusy = "true";
+          document.getElementById("dem12").ariaBusy = "true";
           
       
           let response = await fetch('https://prod-30.southeastasia.logic.azure.com:443/workflows/23543fda5fa441fdaa3dd982b2427086/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=DpasYfgNWSxNq_2J95wA8rAtNg58aYRtUbN_lVTmHP8', {
@@ -89,9 +186,32 @@
           let result = await response.json();
          //alert(result.message);
          // alert(result.name);
-         document.getElementById("demo2").ariaBusy = "false";
-         document.getElementById("d1").innerHTML = "ชื่อไฟล์ที่จัดส่ง: = "+result.file;
-         document.getElementById("d2").innerHTML = "ชื่อไฟล์ที่จัดส่ง: = "+result.file1;
+         document.getElementById("dem1").ariaBusy = "false";
+         document.getElementById("dem2").ariaBusy = "false";
+         document.getElementById("dem3").ariaBusy = "false";
+         document.getElementById("dem4").ariaBusy = "false";
+         document.getElementById("dem5").ariaBusy = "false";
+         document.getElementById("dem6").ariaBusy = "false";
+         document.getElementById("dem7").ariaBusy = "false";
+         document.getElementById("dem8").ariaBusy = "false";
+         document.getElementById("dem9").ariaBusy = "false";
+         document.getElementById("dem10").ariaBusy = "false";
+         document.getElementById("dem11").ariaBusy = "false";
+         document.getElementById("dem12").ariaBusy = "false";
+
+
+         document.getElementById("d1").innerHTML = "จัดส่งสำเร็จ: = "+result.file;
+         document.getElementById("d2").innerHTML = "จัดส่งสำเร็จ: = "+result.file1;
+         document.getElementById("d3").innerHTML = "จัดส่งสำเร็จ: = "+result.file2;
+         document.getElementById("d4").innerHTML = "จัดส่งสำเร็จ: = "+result.file3;
+         document.getElementById("d5").innerHTML = "จัดส่งสำเร็จ: = "+result.file4;
+         document.getElementById("d6").innerHTML = "จัดส่งสำเร็จ: = "+result.file5;
+         document.getElementById("d7").innerHTML = "จัดส่งสำเร็จ: = "+result.file6;
+         document.getElementById("d8").innerHTML = "จัดส่งสำเร็จ: = "+result.file7;
+         document.getElementById("d9").innerHTML = "จัดส่งสำเร็จ: = "+result.file8;
+         document.getElementById("d10").innerHTML = "จัดส่งสำเร็จ: = "+result.file9;
+         document.getElementById("d11").innerHTML = "จัดส่งสำเร็จ: = "+result.file10;
+         document.getElementById("d12").innerHTML = "จัดส่งสำเร็จ: = "+result.file11;
         
         };
       </script>
